@@ -5,9 +5,9 @@ using UnityEngine;
 public class movement : MonoBehaviour
 {
     public float speed = 5f;
-    private float move = 1f;
+    public float move = 0f;
     private Rigidbody rb;
-    private Animator playeranimation;
+    public Animator playeranimation;
     private bool check = true;
     // Start is called before the first frame update
     void Start()

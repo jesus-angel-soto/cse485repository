@@ -64,6 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\audio.cs" />
+    <Compile Include="Assets\Scripts\background.cs" />
+    <Compile Include="Assets\Scripts\breadaction.cs" />
     <Compile Include="Assets\Scripts\camera.cs" />
     <Compile Include="Assets\Scripts\enemyaction.cs" />
     <Compile Include="Assets\Scripts\health.cs" />

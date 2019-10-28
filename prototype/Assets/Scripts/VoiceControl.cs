@@ -7,8 +7,10 @@ using UnityEngine.Windows.Speech;
 
 public class VoiceControl : MonoBehaviour
 {
-    //private Transform player;
 
+    public movement player;
+    public background bg;
+    public breadaction bread;
     private KeywordRecognizer keywordRecognizer;
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
     public AudioClip musicclip;
@@ -33,6 +35,10 @@ public class VoiceControl : MonoBehaviour
     private void left()
     {
         musicsource.Play();
+        player.playeranimation.SetBool("detect", true);
+        bg.scroll_speed = 0f;
+        bread.go.SetActive(true);
+        bread.speed = 5f;
     }
 
     private void right()

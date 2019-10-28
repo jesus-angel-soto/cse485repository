@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Meun.unity
+- path: Assets/Scenes/PLAY.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
