@@ -6,6 +6,9 @@ public class background : MonoBehaviour
 {
     // Start is called before the first frame update
     public float scroll_speed = 0.1f;
+    
+    [HideInInspector]
+    public bool isDead = false;
     private MeshRenderer mesh_Renderer;
     private Vector2 save_Offset;
     void Awake()
@@ -17,9 +20,12 @@ public class background : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float x = Time.time * scroll_speed;
-        Vector2 offset = new Vector2(x, 0);
-        mesh_Renderer.sharedMaterial.SetTextureOffset("_MainTex", offset);
+        if(!isDead)
+        {
+            float x = Time.time * scroll_speed;
+            Vector2 offset = new Vector2(x, 0);
+            mesh_Renderer.sharedMaterial.SetTextureOffset("_MainTex", offset);
+        }
     }
     private void OnDisable()
     {

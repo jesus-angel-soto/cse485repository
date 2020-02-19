@@ -83,6 +83,7 @@
     <Compile Include="Assets\unity-sdk-4.0.1\Examples\ExampleToneAnalyzerV3.cs" />
     <Compile Include="Assets\unity-sdk-4.0.1\Examples\GenericSerialization.cs" />
     <Compile Include="Assets\unity-sdk-4.0.1\Examples\health.cs" />
+    <Compile Include="Assets\unity-sdk-4.0.1\Examples\InputManager.cs" />
     <Compile Include="Assets\unity-sdk-4.0.1\Examples\MAINMENU.cs" />
     <Compile Include="Assets\unity-sdk-4.0.1\Examples\Manager.cs" />
     <Compile Include="Assets\unity-sdk-4.0.1\Examples\movement.cs" />

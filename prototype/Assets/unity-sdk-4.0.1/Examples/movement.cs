@@ -44,7 +44,8 @@ public class movement : MonoBehaviour
             if (checkhealth.hp <= 1) 
             {
                 playeranimation.SetBool("nohealth", true);
-                bg.scroll_speed = 0f;
+
+                
             }
         }
         

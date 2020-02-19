@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class read : MonoBehaviour
 {
+    
+
     // Start is called before the first frame update
     public List<string> list;
     //public string[] list = new string[21];
@@ -25,7 +27,8 @@ public class read : MonoBehaviour
     void ReadCSVFile() 
     {
 
-        StreamReader strReader = new StreamReader("C:/Users/phiis/Desktop/Sheng/prototype/Assets/Scenes/default.csv");
+        StreamReader strReader = new StreamReader("Assets/Resources/Files/default.csv");
+        Debug.Log(strReader);
        
         bool endOfFile = false;
         while (!endOfFile) 
@@ -37,6 +40,7 @@ public class read : MonoBehaviour
                 break;
             }
             var DATA = data_String.Split(',');
+            
             
            /* for (int i = 0; i < DATA.Length; i++)
              {
